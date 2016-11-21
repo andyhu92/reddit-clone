@@ -1,0 +1,42 @@
+<div class="ui basic">
+  <h1 class="ui header">News</h1>
+  <div class="ui grid">
+    <div class="four column row">
+      <div class="left floated column">
+        <div class="ui buttons">
+          <button
+            class="ui left attached icon mini blue button"
+            (click)="changeDirection()">
+            <i
+              [ngClass]="{
+                'up': sortDirection > 0,
+                'down': sortDirection <= 0
+              }"
+              class="arrow up icon"></i>
+          </button>
+          <div class="right attached ui icon top left pointing dropdown blue button">
+            <i class="sort content descending icon"></i>
+            <span class="text">Sort</span>
+            <div class="menu">
+              <div class="header">Sort by</div>
+              <div
+                (click)="changeSort('Time')"
+                class="item">Time</div>
+              <div
+                (click)="changeSort('Votes')"
+                class="item">Votes</div>
+            </div> <!-- menu -->
+          </div>
+        </div> <!-- buttons container -->
+      </div> <!-- left column -->
+      <div class="right floated column">
+        <div class="ui fluid icon input">
+          <input
+            (keyup)="liveSearch($event)"
+            type="text"
+            placeholder="Search..." />
+          <i class="search icon"></i>
+        </div> <!-- input -->
+      </div> <!-- right column -->
+    </div> <!-- four column row -->
+</div>

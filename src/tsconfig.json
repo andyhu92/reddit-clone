@@ -4,6 +4,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": ["es6", "dom"],
+    "files":[],
     "mapRoot": "./",
     "module": "es6",
     "moduleResolution": "node",
