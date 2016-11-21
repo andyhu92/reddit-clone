@@ -31027,7 +31027,10 @@ var TreeNode = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
 var environment = {
-    production: true
+    production: true,
+    baseUrl: 'https://newsapi.org',
+    newsApiKey: "b8ddbecc960140fa94623ac90c841fa8",
+    placeholderImageUrl: '../assets/Images/No_image.png'
 };
 
 
